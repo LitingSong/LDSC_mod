@@ -13,12 +13,16 @@ How to add a new GWAS?
 # STEP2: magma_B.sh
 # STEP3: ./run_cadmagma.sh; note: not sh x (change basedir in downstream_magma.R)
 
-
+  baseDir="/sc/arion/projects/CommonMind/liting/AMP_CMD/magma/",
+  gwasDir=/sc/arion/projects/roussp01b/resources/databases/gwas/cad_mvp_eup/CAD.EUR.MVP.chr1_22.NatMed2022.txt.gz
+  $magmaDir=/sc/arion/projects/CommonMind/liting/AMP_CMD/magma/cad_mvp_eupgwas.tsv.gz 格式
+  /sc/arion/projects/CommonMind/liting/AMP_CMD/ldsc/sumstats/cad_mvp_eup-filtered_w_hm3_1000G_mac5eur_no_mhc.sumstats.gz
 
 
 # Run LDSC
 ## for run selected traits or seft-generated gwas summary:
 grabSumstats function in down_stream_ldsc.R
+step4 GWAS_PANEL="/sc/arion/projects/roussp01a/liting/AMP_CMD/data/metadata.tsv", in STEP4.r
 
 ## for R version or R packages,
 1. comment for xx
